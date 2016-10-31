@@ -1,11 +1,11 @@
 <?php
 
-namespace LaravelApiSkeleton\Core;
+namespace LaravelApiSkeleton\Core\Console;
 
 use Illuminate\Console\Scheduling\Schedule;
-use Illuminate\Foundation\Console\Kernel;
+use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
 
-class ConsoleKernel extends Kernel
+class Kernel extends ConsoleKernel
 {
     /**
      * The Artisan commands provided by your application.
