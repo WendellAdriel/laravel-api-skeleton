@@ -1,16 +1,16 @@
 <?php
 
-namespace LaravelApiSkeleton\Core;
+namespace LaravelApiSkeleton\Core\Exceptions;
 
 use Exception;
 use Illuminate\Auth\AuthenticationException;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
-use Illuminate\Foundation\Exceptions\Handler;
+use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Tymon\JWTAuth\Exceptions\TokenExpiredException;
 use Tymon\JWTAuth\Exceptions\TokenInvalidException;
 
-class ExceptionHandler extends Handler
+class Handler extends ExceptionHandler
 {
     /**
      * A list of the exception types that should not be reported.
